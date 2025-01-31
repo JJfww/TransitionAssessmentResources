@@ -1,0 +1,450 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Transition Assessment Toolkit 2025</title>
+        <meta name="robots" content="noindex" />
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var html = document.querySelector('html');
+            var sidebar = null;
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item affix "><a href="index.html">Introduction</a></li><li class="chapter-item "><a href="Transition-Assessments.html"><strong aria-hidden="true">1.</strong> Transition Assessments</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="education.html"><strong aria-hidden="true">1.1.</strong> Education</a></li><li class="chapter-item "><a href="Independent_living.html"><strong aria-hidden="true">1.2.</strong> Independent Living/Community Access</a></li><li class="chapter-item "><a href="parent-sur.html"><strong aria-hidden="true">1.3.</strong> Parent Surveys</a></li><li class="chapter-item "><a href="self-sd.html"><strong aria-hidden="true">1.4.</strong> Self-Determination</a></li><li class="chapter-item "><a href="voc-emp.html"><strong aria-hidden="true">1.5.</strong> Vocational/Employment</a></li></ol></li><li class="chapter-item "><a href="comm-ag.html"><strong aria-hidden="true">2.</strong> Community Agencies and Resources</a></li><li class="chapter-item "><a href="other-res.html"><strong aria-hidden="true">3.</strong> Open Access (Free!) Transition Focused Web Resources</a></li><li class="chapter-item "><a href="Other.html"><strong aria-hidden="true">4.</strong> Other Assessment Resources</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Transition Assessment Toolkit 2025</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="community-connections-at-pinckneyusd497---transition-assessment-toolkit"><a class="header" href="#community-connections-at-pinckneyusd497---transition-assessment-toolkit">Community Connections at Pinckney/USD497 - Transition Assessment Toolkit</a></h1>
+<p>Transition planning for our students is a critical process, and at the heart of effective transition planning is <strong>age-appropriate transition assessment</strong>. This isn't just another task on our to-do list; it's the <strong>foundation</strong> upon which we build personalized and meaningful pathways to adulthood for each student.</p>
+<p>Transition assessment is the systematic process of gathering information about a student's strengths, preferences, needs, and interests across all critical domains of adult life – employment, postsecondary education, independent living, and community participation. This information is not just a snapshot in time; it’s the driving force behind our individualized transition plans. By understanding where a student is now and where they want to go, we can create relevant goals, design impactful learning experiences, and ensure our students have the skills and supports they need for a successful and fulfilling life after graduation. Simply put: <strong>Assessment informs everything we do in transition planning.</strong></p>
+<p>Furthermore, transition assessment is a mandated component of the Individualized Education Program (IEP) process, as outlined by the Individuals with Disabilities Education Act (IDEA). Specifically, IDEA regulations require that the IEP include appropriate measurable postsecondary goals based upon age-appropriate transition assessments related to training, education, employment, and where appropriate, independent living skills. This ensures that our transition services are based on a comprehensive understanding of each student’s unique needs and aspirations, supporting their movement toward a positive future.</p>
+<p>This document is designed to be a practical resource for you as you work to support students in their transition journey. We’ve compiled a web-based guide filled with various transition assessments, organized by the four key transition domains. Each assessment is designed to offer different types of data, and help to inform the individualized student’s transition plan.</p>
+<h3 id="how-to-use-this-resource"><a class="header" href="#how-to-use-this-resource"><strong>How to Use this Resource:</strong></a></h3>
+<p>This resource is organized using a website format to allow easy access to the assessment tools. Each domain (Education, Independent Living/Community Access, Vocational/Employment) has multiple assessment serving different purposes for you to explor. Consider <strong>what you already know</strong> about the student and <strong>what you need to know</strong> to implement effective transition planning. This will help inform what assessments you will want to use.</p>
+<ul>
+<li>
+<p><strong>Browse by Domain:</strong> Simply navigate to the page for the domain you’re interested in, using the sidebar links.</p>
+</li>
+<li>
+<p><strong>Explore Assessments:</strong> Within each domain, you’ll find a variety of assessment tools, including examples of formal and informal assessments, as well as links to relevant resources.</p>
+</li>
+<li>
+<p><strong>Read the Descriptions:</strong> Each assessment will have a brief description outlining its purpose. </p>
+</li>
+<li>
+<p><strong>Choose Wisely:</strong> Select the assessments that are most appropriate for the individual student you’re working with. Consider the student's communication style, support needs, and learning style when making your choices.</p>
+</li>
+<li>
+<p><strong>Use the Data:</strong> The information gathered from these assessments should be used to develop individualized transition goals and services within the student's IEP. It should be a guide to determine needed supports, training, and learning opportunities.</p>
+</li>
+<li>
+<p><strong>Revisit:</strong> Assessment is not a one-time activity. Regularly update assessment information for the best possible outcomes.</p>
+</li>
+</ul>
+<p>By utilizing this resource, we can work together to ensure that every transition plan is based on data and directly reflects the unique strengths, needs, and aspirations of the students we serve. Let's work together to make transitions smooth and successful.</p>
+<h3 id="community-agencies-and-resources"><a class="header" href="#community-agencies-and-resources"><strong>Community Agencies and Resources</strong></a></h3>
+<p>This section includes Lawrence and Kansas-based resources as well as nationally recognized organizations and technical assistance centers focused on educating students with disabilities and/or on transition-related topics.</p>
+<h3 id="open-access-transition-focused-web-resources"><a class="header" href="#open-access-transition-focused-web-resources"><strong>Open Access Transition Focused Web Resources</strong></a></h3>
+<p>This section provides links to resources such as transition bell ringers, quick transition activities, and transition curricula.</p>
+<h3 id="updates"><a class="header" href="#updates">Updates</a></h3>
+<p>This is a living document, meaning things can be added or removed as new resources are found or old resources are no longer relevevant. Please share anything you think should be included with <a href="mailto:jennifer.burnes@usd497.org">Jennifer Burnes</a>.</p>
+<h3 id="many-thanks"><a class="header" href="#many-thanks">Many Thanks!</a></h3>
+<p>We want to express our sincere appreciation to everyone who contributed resources to this document. We value the active participation and positive approach demonstrated by those who embraced this project with enthusiasm. Their collaborative spirit and dedication to improving our transition practices have been crucial in making this a valuable and impactful resource.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="explore-transition-assessments"><a class="header" href="#explore-transition-assessments">Explore Transition Assessments</a></h1>
+<p>Ready to explore available transition assessment resources? Use the links in the sidebar to navigate to specific domains, including General Resources, Independent Living, Vocational/Employment, Education, Self-Determination, and Parent Surveys. Some options will open a pdf file that you can download and print. Others will take you to an outside website. </p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="education"><a class="header" href="#education">Education</a></h1>
+<p>These assessments, forms, and inventories are for those students who want to pursue postsecondary education either at a traditional college or university. </p>
+<ul>
+<li><a href="https://www.act.org/content/act/en/products-and-services/the-act/test-preparation/free-act-test-prep.html">Free ACT Prep</a></li>
+<li><a href="https://satsuite.collegeboard.org/psat-nmsqt/preparing/practice-tests">Free SAT Prep</a></li>
+<li><a href="https://www.khanacademy.org/test-prep/sat/full-length-sat-1">SAT Practice Test (full-length &amp; free) PDFs | Khan Academy</a></li>
+</ul>
+<p>This assessment is for individuals with disabilities who wish to attend a  Transition and Postsecondary Program for Students with Intellectual Disabilities (TPSID) Program. </p>
+<ul>
+<li><a href="https://andrealsuk.wixsite.com/peaeassessment">Postsecondary Education and Experience Assessment (free)</a></li>
+</ul>
+<p>This questionnaire will help students reflect on their academic skills and give them a general sense of how they view their abilities. It is divided into 8 sections, with each providing handouts/links and an assessment that generally takes less than 10 minutes to complete. </p>
+<ul>
+<li><a href="Study_Skills_Assessment.pdf">Study Skills Assessment Questionnaire</a></li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="independent-livingcommunity-access-assessments"><a class="header" href="#independent-livingcommunity-access-assessments">Independent Living/Community Access Assessments</a></h1>
+<p><a href="AdolescentAutonomyChecklist.pdf">Adolescent Autonomy Checklist</a></p>
+<ul>
+<li>This checklist covers a comprehensive set of home skills. </li>
+<li>Parents or caregivers can use it to share with their child's teachers to help develop independent living goals. </li>
+</ul>
+<p><a href="CommBasedSkillsAssess.pdf">Community Based Skills Assessment</a></p>
+<ul>
+<li>This tool assesses an individual's knowledge, skill, and social communication abilities using both a criterion-based observation and an interview-based process </li>
+<li>Three levels based on age (Life Aware 12-16; Life Explorer 17-22; Life Seeker Post High School) </li>
+</ul>
+<p><a href="Life-Skills-Advocate-Executive-Functioning-Assessment-Fillable.pdf">Executive Functioning Skills</a></p>
+<ul>
+<li>Resource from LifeSkillsAdvocate.com that includes a simple scoring guide, explanation, and space for goal setting/next steps for low scoring areas. </li>
+<li>Each domain is a one-page assessment that can be completed on its own. Domains include: Planning, Time Management, Task Initiation, Organization, Problem-Solving, Flexibility, Working Memory, Emotional Control, Impulse Control, Attentional Control, and Self-Monitoring.</li>
+</ul>
+<p><a href="Evaluate%20Your%20Reputation.pdf">Evaluate Your Reputation</a></p>
+<ul>
+<li>Simple self-evaluation with a 0-1-2 scale </li>
+<li>Provides steps for goal-setting after evaluation. </li>
+</ul>
+<h2 id="assessements-for-students-with-high-support-needs"><a class="header" href="#assessements-for-students-with-high-support-needs">Assessements for students with High Support Needs</a></h2>
+<p><a href="ILS_Checklist_2018.pdf">Independent Living Skills (ILS) Checklist</a></p>
+<ul>
+<li>Comprehensive checklist covering most ILS domains that is suitable for students with the <strong>most significant support needs</strong> across multiple grade levels.</li>
+</ul>
+<p><a href="Life%20Skills%20Checklist.pdf">Life Skills Checklist</a></p>
+<ul>
+<li>Primarily designed for students with the <strong>most significant support needs</strong>, although some domains may also be relevant for students with less intensive support needs.</li>
+</ul>
+<p><a href="Personal_Preference_Indicators.pdf">Personal Preferences Indicators</a><br />
+<a href="Personal_Preference_Indicators_Spanish.pdf">Los Indicadores de Preferencias Personales</a></p>
+<ul>
+<li>This is a guide for planning through accessing information about an individual's preferences. It's meant to be a guide through informal conversations with the individual or someone who knows and has a positive relationship with the individual, such as a family member or caregiver. </li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="parent-surveys"><a class="header" href="#parent-surveys">Parent Surveys</a></h1>
+<p><a href="ParentTransitionSurvey-Form-fill.pdf">UPDATED Parent Transition Survey</a> - An updated and fillable PDF of the above Parent Transition Survey - can be downloaded and shared electronically.</p>
+<p><a href="parent-transition-survey.pdf">Original Parent Transition Survey</a> - this instrument is helpful for students who may have more support needs as well as ensuring the parent's voice is heard. It can be used in addition to any interviews/assessments completed with the student. </p>
+<p><strong>Family Cultural Wealth Assessment</strong> </p>
+<p>These are a series of interview protocols that help identify relevant family and community strengths, assets, and desires. It is designed to help families explore assets related to future employment, education, and adult living outcomes, while ensuring educators are teaching the necessary skills, providing relevant opportunities, and identifying resources that will help your student in the future. </p>
+<ul>
+<li><a href="FCA_Profile-Family.pdf">Family Cultural Assessment - Family Version</a></li>
+<li><a href="FCA_Profile-Student.pdf">Family Cultural Assessment - Student Version</a></li>
+<li><a href="FCA_Profile-Teacher.pdf">Family Cultural Assessment - Teacher Version</a></li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="self-determination"><a class="header" href="#self-determination">Self-Determination</a></h1>
+<p>Air Self-Determination Scale </p>
+<ul>
+<li><a href="AIR_User_Guide.pdf">AIR User Guide</a></li>
+<li><a href="AIR_Student_Fillable.pdf">Student Form</a></li>
+<li><a href="AIR_Parent_Fillable.pdf">Parent Form</a></li>
+<li><a href="AIR_Educator_Fillable.pdf">Educator Form</a> </li>
+</ul>
+<p>Arc Self-Determination Scale </p>
+<ul>
+<li><a href="arc-procedure.pdf">Procedural Guidelines</a></li>
+<li><a href="arc-sd-scale-rev2013.pdf">The Arc's Self-Determination Scale</a> </li>
+</ul>
+<p><a href="https://imdetermined.org/tool/one-pager/">I'm Determined</a> - Check out their short videos with students talking about the one-pager here, and then you can access the implentation guide and blank template below. </p>
+<ul>
+<li><a href="One-Pager_Guide_IMD.pdf">Implementation Guide</a></li>
+<li><a href="One-Pager_Tool_IMD.pdf">Blank Form</a></li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="vocationalemployment-transition-assessments"><a class="header" href="#vocationalemployment-transition-assessments">Vocational/Employment Transition Assessments</a></h1>
+<h2 id="employment-interest-assessments"><a class="header" href="#employment-interest-assessments">Employment Interest Assessments</a></h2>
+<p><a href="https://www.mynextmove.org/explore/ip">My Next Move (O-Net Interest Profiler)</a> </p>
+<ul>
+<li>online interest profile that allows you print a score report.</li>
+</ul>
+<p><a href="onet-profiler-short.pdf">O-Net Interest Profiler (short form version)</a></p>
+<ul>
+<li>shorter version; print and allow student to complete. </li>
+</ul>
+<p><a href="https://www.careeronestop.org/Toolkit/Skills/skills-matcher-questions.aspx">Career One Stop: Career Exploration, Training, &amp; Jobs</a> </p>
+<ul>
+<li>US Department of Labor skills matcher that allows students to self-evaluate their skills and knowledge across various employment types. </li>
+</ul>
+<p><a href="https://www.careeronestop.org/Videos/CareerVideos/career-videos.aspx">Career One Stop Videos (English and Spanish)</a> </p>
+<ul>
+<li>brief videos that show snapshots of what various jobs look like. </li>
+</ul>
+<p>CTE Career Clusters Interest Survey </p>
+<ul>
+<li>Career Tech is in the process of updating this.</li>
+</ul>
+<h2 id="student-self-assessments-informal"><a class="header" href="#student-self-assessments-informal">Student Self-Assessments (Informal)</a></h2>
+<p><a href="soft-skills-self.pdf">Soft Skills</a> </p>
+<ul>
+<li>One page work skills evaluation </li>
+</ul>
+<p><a href="Values%20Scale.pdf">Values Scale</a> </p>
+<ul>
+<li>Two page values choices to help individuals determine what values are most important in a job/career</li>
+</ul>
+<p><a href="Holland%20Code.pdf">Holland Code Party Groups</a> </p>
+<ul>
+<li>Small group activity where individuals can choose the groups they'd like to talk to at a party and match to </li>
+</ul>
+<p><a href="https://www.roguecc.edu/Counseling/HollandCodes/test.asp">Holland Code Quiz</a> </p>
+<ul>
+<li>Quiz that classifies jobs into categories, interest clusters, or work personality environments. </li>
+</ul>
+<h2 id="assessements-for-students-with-high-support-needs-1"><a class="header" href="#assessements-for-students-with-high-support-needs-1">Assessements for students with High Support Needs</a></h2>
+<p><a href="Pictorial_Interest_Inventory.pdf">Pictorial Interest Inventory</a></p>
+<ul>
+<li>structured around eight different career fields </li>
+</ul>
+<p><a href="trans-plan-visual-student-survey.pdf">Visual Student Survey</a> </p>
+<ul>
+<li>strength and interest based pictorial assessment. Also includes independent living and leisure. </li>
+</ul>
+<p><a href="What-do-you-prefer.pdf">What Do You Prefer?</a> </p>
+<ul>
+<li>assesses students preferences around different work based qualities - e.g., inside vs. outside, working with peope or alone, etc. </li>
+</ul>
+<p><a href="Vocational_EvaluationTools_Work_Environment_Preferences.pdf">Work Environment Preferences</a> </p>
+<ul>
+<li>assesses student work preferences; some overlap with &quot;What Do You Prefer&quot;</li>
+</ul>
+<p><a href="Employment-Checklist-Booklet.pdf">Employment Checklist</a> </p>
+<ul>
+<li>This checklist includes prerequisite knowledge and skills for obtaining a job and is targeted towards students aged 14-22 with disabilities. </li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="community-agencies"><a class="header" href="#community-agencies">Community Agencies</a></h1>
+<h3 id="kansas-community-agencies-and-services"><a class="header" href="#kansas-community-agencies-and-services">Kansas Community Agencies and Services</a></h3>
+<div class="table-wrapper"><table><thead><tr><th>Agency</th><th>Description</th><th>Website</th></tr></thead><tbody>
+<tr><td>Cottonwood/CDDO (Douglas County)</td><td>The Cottonwood/Community Developmental Disability Organization (CDDO) helps individuals with intellectual and developmental disabilities access services and support in the community.</td><td><a href="http://www.cddo.cwood.org">www.cddo.cwood.org</a></td></tr>
+<tr><td>Families Together</td><td>Families Together provides support, information, and training to families of children with disabilities and special healthcare needs.</td><td><a href="https://familiestogetherinc.org/">https://familiestogetherinc.org/</a></td></tr>
+<tr><td>Home and Community Based Waiver Service Information</td><td>The Kansas Department for Aging and Disability Services provides information on Home and Community Based Services (HCBS) programs for individuals with disabilities and older adults.</td><td>https://www.kdads.ks.gov/services-programs/long-term-services-supports/home-and-community-based-services-hcbs-programs</td></tr>
+<tr><td>Independence, Inc.</td><td>Independence, Inc. provides services and support to individuals with disabilities to help them live independently in the community.</td><td><a href="http://www.independenceinc.org/">http://www.independenceinc.org/</a></td></tr>
+<tr><td>Kansas Guardianship Program</td><td>The Kansas Guardianship Program provides legal guardianship services for adults with disabilities who do not have family or friends able to serve as their guardians.</td><td><a href="http://www.ksgprog.org/">http://www.ksgprog.org/</a></td></tr>
+<tr><td>Ready for Good</td><td>Ready for Good is a social enterprise that employs individuals with disabilities to create sustainable products for the community.</td><td><a href="https://shopreadyforgood.com">https://shopreadyforgood.com</a></td></tr>
+<tr><td>Van Go, Inc.</td><td>Van Go, Inc. provides arts-based programming for youth with disabilities and those facing economic, social, or other challenges.</td><td><a href="https://www.van-go.org/">https://www.van-go.org/</a></td></tr>
+<tr><td>Kansas Vocational Rehabilitation Services</td><td>Vocational Rehabilitation Services helps individuals with disabilities prepare for, find, and maintain employment.</td><td><a href="http://www.dcf.ks.gov/services/rs/pages/employment-services.aspx">Quick Links</a></td></tr>
+</tbody></table>
+</div>
+<hr />
+<h3 id="other-resources"><a class="header" href="#other-resources"><strong>Other Resources</strong></a></h3>
+<div class="table-wrapper"><table><thead><tr><th>Agency</th><th>Description</th><th>Website</th></tr></thead><tbody>
+<tr><td>CEC Division on Career Development and Transition</td><td>A division of the Council for Exceptional Children that focuses on career development and transition for students with disabilities.</td><td><a href="https://dcdt.org">https://dcdt.org</a></td></tr>
+<tr><td>National Technical Assistance Center on Transition: The Collaborative (NTACT:C)</td><td>A technical assistance and dissemination center that focuses on improving transition planning and services for youth with disabilities.</td><td><a href="https://transitionta.org">https://transitionta.org</a></td></tr>
+<tr><td>The Transition Coalition</td><td>A training and technical assistance organization that focuses on improving transition outcomes for youth with disabilities.</td><td><a href="https://transitioncoalition.org">https://transitioncoalition.org</a></td></tr>
+<tr><td>Zarrow Institute on Transition and Self-Determination</td><td>An institute that focuses on improving transition outcomes and promoting self-determination for youth with disabilities.</td><td><a href="https://www.ou.edu/education/centers-and-partnerships/zarrow">https://www.ou.edu/education/centers-and-partnerships/zarrow</a></td></tr>
+</tbody></table>
+</div><div style="break-before: page; page-break-before: always;"></div><p>Transition Bell Ringers are centered around essential ideas found in the <em>Me! Lessons for Teaching Self-Awareness and Self-Advocacy</em>, which encompass self-awareness, understanding disabilities, setting goals, and student participation in the IEP process.</p>
+<p>Additionall bell ringers address a range of other subjects. These can be employed individually, in small groups, or for whole class discussions. Feel free to adapt them as necessary to accommodate the unique requirements of your students - the objective is to foster opportunities for dialogue and learning that cover a diverse array of crucial transition-related themes.</p>
+<p><a href="Transition-bell-work.pdf">Transition Bell Ringers</a></p>
+<p><a href="fundamental-bell-ringers.pdf">Fundamental Transition Skills</a></p>
+<p><a href="functional-bell-ringers.pdf">Functional Transition Skills</a></p>
+<p><a href="daily_ind_living_bell_ringers.pdf">Daily Living/Independent Living</a></p>
+<p><a href="math-bell-ringers.pdf">Math Skills for Everyday</a></p>
+<hr />
+<p><a href="https://transitiontn.org/student/quick-activities/">Quick Transition Activities</a></p>
+<p>This resource from Transition Tennessee has lessons with embedded videos, flash cards, and exercises covering a wide range of transition topics. </p>
+<hr />
+<p><a href="https://familiestogetherinc.org/transition-to-adulthood-for-students/">Families Together, Inc.</a> is a Kansas based nonprofit organization that provides support and advocacy services for families of children and youth with disabilities. This section is focused on the transition to adulthood for students with disabilities.</p>
+<p>On this page, you can find a variety of resources related to the transition process, including information on the transition planning process, the role of families in the transition process, and available resources and supports for individuals with disabilities as they transition to adulthood.</p>
+<p>Some of the specific resources and topics covered on the page include:</p>
+<ul>
+<li>Overview of the transition process and timeline</li>
+<li>Importance of self-determination and self-advocacy</li>
+<li>The role of families and caregivers in the transition process</li>
+<li>Information on post-secondary education options and financial aid</li>
+<li>Employment and vocational training resources and supports</li>
+<li>Housing and independent living options</li>
+<li>Resources for accessing healthcare and other community supports</li>
+<li>Legal considerations and protections for individuals with disabilities</li>
+</ul>
+<p>It also include Transition to Adulthood E-Learning Modules that are self-paced. Students must create an account. </p>
+<ul>
+<li>Module 1 – Transition &amp; the IEP</li>
+<li>Module 2 – Self-advocacy</li>
+<li>Module 3 – Your IEP Team</li>
+<li>Module 4 – Who are You Now (Transition Assessment &amp; Present Levels of Academic Achievement and Functional Performance)</li>
+<li>Module 5 – My Dreams for After High School (Postsecondary Goals)</li>
+<li>Module 6 – Agencies that Can Help (Interagency Linkages)</li>
+</ul>
+<hr />
+<p><a href="https://www.spedadulting.com/blogs/">Adulting Made Easy</a> is a comprehensive platform that provides resources, information, and support for special education students transitioning to adulthood. The website is dedicated to helping individuals with disabilities navigate the complexities of adult life, such as housing, employment, financial management, and community integration.</p>
+<p>The website is organized into several sections:</p>
+<ol>
+<li>
+<p>Home: The homepage provides an overview of the Sped Adulting platform, highlighting its mission and purpose.</p>
+</li>
+<li>
+<p>About: This section gives background information on the founder, Ali Jones, a special education teacher, and the story behind Sped Adulting.</p>
+</li>
+<li>
+<p>Services: Sped Adulting offers various services such as workshops, coaching, and consulting. They also provide resources and materials to support the transition process for special education students.</p>
+</li>
+<li>
+<p>Blogs: The blog section covers a wide range of topics related to special education and adult life, such as navigating social security benefits, exploring housing options, and finding employment opportunities. These articles offer valuable insights and tips for individuals, families, and educators.</p>
+</li>
+<li>
+<p>Resources: This section provides a curated list of resources, including articles, videos, books, and websites, to help individuals with disabilities, their families, and educators find relevant information and support.</p>
+</li>
+</ol>
+<hr />
+<div style="break-before: page; page-break-before: always;"></div><h1 id="other-assessment-resources"><a class="header" href="#other-assessment-resources">Other Assessment Resources</a></h1>
+<p>Once you are comfortable in using transition assessments for transtion planning, you may decide there are some other types of assessments or instruments you need for a particular student or students. </p>
+<p><a href="Quickbook_of_Transition_Assessment.pdf">Quickbook of Transition Assessments</a></p>
+<p>This book includes many transition assessments that can be completed by students, families, and teachers across all transition domains. It includes checklists, rating scales, surveys, or questionnaires. </p>
+<p><a href="Age-Appropriate-Assessment-Guide.pdf">Age-Appropriate Transition Assessments and Resources</a></p>
+<p>This resource reviews the what, why, and how of transition assessments and provides links to other transition assessment resources. </p>
+<p>The Indiana Secondary Transition Resource Center has a <a href="https://instrc.indiana.edu/transition-resources/transition-matrix.html">Transition Assessment Matrix </a> that allows you to select variables to narrow down your transition assessement choices. You may search by topic (e.g., Independent Living), grade level, assessments in Spanish or Burmese, and assessments for students with high support needs.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+        <script>
+        window.addEventListener('load', function() {
+            window.setTimeout(window.print, 100);
+        });
+        </script>
+
+    </div>
+    </body>
+</html>

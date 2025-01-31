@@ -1,0 +1,252 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Open Access (Free!) Transition Focused Web Resources - Transition Assessment Toolkit 2025</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var html = document.querySelector('html');
+            var sidebar = null;
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item affix "><a href="index.html">Introduction</a></li><li class="chapter-item "><a href="Transition-Assessments.html"><strong aria-hidden="true">1.</strong> Transition Assessments</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="education.html"><strong aria-hidden="true">1.1.</strong> Education</a></li><li class="chapter-item "><a href="Independent_living.html"><strong aria-hidden="true">1.2.</strong> Independent Living/Community Access</a></li><li class="chapter-item "><a href="parent-sur.html"><strong aria-hidden="true">1.3.</strong> Parent Surveys</a></li><li class="chapter-item "><a href="self-sd.html"><strong aria-hidden="true">1.4.</strong> Self-Determination</a></li><li class="chapter-item "><a href="voc-emp.html"><strong aria-hidden="true">1.5.</strong> Vocational/Employment</a></li></ol></li><li class="chapter-item "><a href="comm-ag.html"><strong aria-hidden="true">2.</strong> Community Agencies and Resources</a></li><li class="chapter-item expanded "><a href="other-res.html" class="active"><strong aria-hidden="true">3.</strong> Open Access (Free!) Transition Focused Web Resources</a></li><li class="chapter-item "><a href="Other.html"><strong aria-hidden="true">4.</strong> Other Assessment Resources</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Transition Assessment Toolkit 2025</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <p>Transition Bell Ringers are centered around essential ideas found in the <em>Me! Lessons for Teaching Self-Awareness and Self-Advocacy</em>, which encompass self-awareness, understanding disabilities, setting goals, and student participation in the IEP process.</p>
+<p>Additionall bell ringers address a range of other subjects. These can be employed individually, in small groups, or for whole class discussions. Feel free to adapt them as necessary to accommodate the unique requirements of your students - the objective is to foster opportunities for dialogue and learning that cover a diverse array of crucial transition-related themes.</p>
+<p><a href="Transition-bell-work.pdf">Transition Bell Ringers</a></p>
+<p><a href="fundamental-bell-ringers.pdf">Fundamental Transition Skills</a></p>
+<p><a href="functional-bell-ringers.pdf">Functional Transition Skills</a></p>
+<p><a href="daily_ind_living_bell_ringers.pdf">Daily Living/Independent Living</a></p>
+<p><a href="math-bell-ringers.pdf">Math Skills for Everyday</a></p>
+<hr />
+<p><a href="https://transitiontn.org/student/quick-activities/">Quick Transition Activities</a></p>
+<p>This resource from Transition Tennessee has lessons with embedded videos, flash cards, and exercises covering a wide range of transition topics. </p>
+<hr />
+<p><a href="https://familiestogetherinc.org/transition-to-adulthood-for-students/">Families Together, Inc.</a> is a Kansas based nonprofit organization that provides support and advocacy services for families of children and youth with disabilities. This section is focused on the transition to adulthood for students with disabilities.</p>
+<p>On this page, you can find a variety of resources related to the transition process, including information on the transition planning process, the role of families in the transition process, and available resources and supports for individuals with disabilities as they transition to adulthood.</p>
+<p>Some of the specific resources and topics covered on the page include:</p>
+<ul>
+<li>Overview of the transition process and timeline</li>
+<li>Importance of self-determination and self-advocacy</li>
+<li>The role of families and caregivers in the transition process</li>
+<li>Information on post-secondary education options and financial aid</li>
+<li>Employment and vocational training resources and supports</li>
+<li>Housing and independent living options</li>
+<li>Resources for accessing healthcare and other community supports</li>
+<li>Legal considerations and protections for individuals with disabilities</li>
+</ul>
+<p>It also include Transition to Adulthood E-Learning Modules that are self-paced. Students must create an account. </p>
+<ul>
+<li>Module 1 – Transition &amp; the IEP</li>
+<li>Module 2 – Self-advocacy</li>
+<li>Module 3 – Your IEP Team</li>
+<li>Module 4 – Who are You Now (Transition Assessment &amp; Present Levels of Academic Achievement and Functional Performance)</li>
+<li>Module 5 – My Dreams for After High School (Postsecondary Goals)</li>
+<li>Module 6 – Agencies that Can Help (Interagency Linkages)</li>
+</ul>
+<hr />
+<p><a href="https://www.spedadulting.com/blogs/">Adulting Made Easy</a> is a comprehensive platform that provides resources, information, and support for special education students transitioning to adulthood. The website is dedicated to helping individuals with disabilities navigate the complexities of adult life, such as housing, employment, financial management, and community integration.</p>
+<p>The website is organized into several sections:</p>
+<ol>
+<li>
+<p>Home: The homepage provides an overview of the Sped Adulting platform, highlighting its mission and purpose.</p>
+</li>
+<li>
+<p>About: This section gives background information on the founder, Ali Jones, a special education teacher, and the story behind Sped Adulting.</p>
+</li>
+<li>
+<p>Services: Sped Adulting offers various services such as workshops, coaching, and consulting. They also provide resources and materials to support the transition process for special education students.</p>
+</li>
+<li>
+<p>Blogs: The blog section covers a wide range of topics related to special education and adult life, such as navigating social security benefits, exploring housing options, and finding employment opportunities. These articles offer valuable insights and tips for individuals, families, and educators.</p>
+</li>
+<li>
+<p>Resources: This section provides a curated list of resources, including articles, videos, books, and websites, to help individuals with disabilities, their families, and educators find relevant information and support.</p>
+</li>
+</ol>
+<hr />
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="comm-ag.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="Other.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="comm-ag.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="Other.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

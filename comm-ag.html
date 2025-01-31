@@ -1,0 +1,219 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Community Agencies and Resources - Transition Assessment Toolkit 2025</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var html = document.querySelector('html');
+            var sidebar = null;
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item affix "><a href="index.html">Introduction</a></li><li class="chapter-item "><a href="Transition-Assessments.html"><strong aria-hidden="true">1.</strong> Transition Assessments</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="education.html"><strong aria-hidden="true">1.1.</strong> Education</a></li><li class="chapter-item "><a href="Independent_living.html"><strong aria-hidden="true">1.2.</strong> Independent Living/Community Access</a></li><li class="chapter-item "><a href="parent-sur.html"><strong aria-hidden="true">1.3.</strong> Parent Surveys</a></li><li class="chapter-item "><a href="self-sd.html"><strong aria-hidden="true">1.4.</strong> Self-Determination</a></li><li class="chapter-item "><a href="voc-emp.html"><strong aria-hidden="true">1.5.</strong> Vocational/Employment</a></li></ol></li><li class="chapter-item expanded "><a href="comm-ag.html" class="active"><strong aria-hidden="true">2.</strong> Community Agencies and Resources</a></li><li class="chapter-item "><a href="other-res.html"><strong aria-hidden="true">3.</strong> Open Access (Free!) Transition Focused Web Resources</a></li><li class="chapter-item "><a href="Other.html"><strong aria-hidden="true">4.</strong> Other Assessment Resources</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Transition Assessment Toolkit 2025</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="community-agencies"><a class="header" href="#community-agencies">Community Agencies</a></h1>
+<h3 id="kansas-community-agencies-and-services"><a class="header" href="#kansas-community-agencies-and-services">Kansas Community Agencies and Services</a></h3>
+<div class="table-wrapper"><table><thead><tr><th>Agency</th><th>Description</th><th>Website</th></tr></thead><tbody>
+<tr><td>Cottonwood/CDDO (Douglas County)</td><td>The Cottonwood/Community Developmental Disability Organization (CDDO) helps individuals with intellectual and developmental disabilities access services and support in the community.</td><td><a href="http://www.cddo.cwood.org">www.cddo.cwood.org</a></td></tr>
+<tr><td>Families Together</td><td>Families Together provides support, information, and training to families of children with disabilities and special healthcare needs.</td><td><a href="https://familiestogetherinc.org/">https://familiestogetherinc.org/</a></td></tr>
+<tr><td>Home and Community Based Waiver Service Information</td><td>The Kansas Department for Aging and Disability Services provides information on Home and Community Based Services (HCBS) programs for individuals with disabilities and older adults.</td><td>https://www.kdads.ks.gov/services-programs/long-term-services-supports/home-and-community-based-services-hcbs-programs</td></tr>
+<tr><td>Independence, Inc.</td><td>Independence, Inc. provides services and support to individuals with disabilities to help them live independently in the community.</td><td><a href="http://www.independenceinc.org/">http://www.independenceinc.org/</a></td></tr>
+<tr><td>Kansas Guardianship Program</td><td>The Kansas Guardianship Program provides legal guardianship services for adults with disabilities who do not have family or friends able to serve as their guardians.</td><td><a href="http://www.ksgprog.org/">http://www.ksgprog.org/</a></td></tr>
+<tr><td>Ready for Good</td><td>Ready for Good is a social enterprise that employs individuals with disabilities to create sustainable products for the community.</td><td><a href="https://shopreadyforgood.com">https://shopreadyforgood.com</a></td></tr>
+<tr><td>Van Go, Inc.</td><td>Van Go, Inc. provides arts-based programming for youth with disabilities and those facing economic, social, or other challenges.</td><td><a href="https://www.van-go.org/">https://www.van-go.org/</a></td></tr>
+<tr><td>Kansas Vocational Rehabilitation Services</td><td>Vocational Rehabilitation Services helps individuals with disabilities prepare for, find, and maintain employment.</td><td><a href="http://www.dcf.ks.gov/services/rs/pages/employment-services.aspx">Quick Links</a></td></tr>
+</tbody></table>
+</div>
+<hr />
+<h3 id="other-resources"><a class="header" href="#other-resources"><strong>Other Resources</strong></a></h3>
+<div class="table-wrapper"><table><thead><tr><th>Agency</th><th>Description</th><th>Website</th></tr></thead><tbody>
+<tr><td>CEC Division on Career Development and Transition</td><td>A division of the Council for Exceptional Children that focuses on career development and transition for students with disabilities.</td><td><a href="https://dcdt.org">https://dcdt.org</a></td></tr>
+<tr><td>National Technical Assistance Center on Transition: The Collaborative (NTACT:C)</td><td>A technical assistance and dissemination center that focuses on improving transition planning and services for youth with disabilities.</td><td><a href="https://transitionta.org">https://transitionta.org</a></td></tr>
+<tr><td>The Transition Coalition</td><td>A training and technical assistance organization that focuses on improving transition outcomes for youth with disabilities.</td><td><a href="https://transitioncoalition.org">https://transitioncoalition.org</a></td></tr>
+<tr><td>Zarrow Institute on Transition and Self-Determination</td><td>An institute that focuses on improving transition outcomes and promoting self-determination for youth with disabilities.</td><td><a href="https://www.ou.edu/education/centers-and-partnerships/zarrow">https://www.ou.edu/education/centers-and-partnerships/zarrow</a></td></tr>
+</tbody></table>
+</div>
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="voc-emp.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="other-res.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="voc-emp.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="other-res.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>
