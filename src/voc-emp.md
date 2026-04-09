@@ -10,12 +10,6 @@
 
 - shorter version; print and allow student to complete. 
 
-O*NET Interest Profiler, pictorial version
-
-- [Assessment](ONET.IP60.Assessment.pdf)
-- [Score Sheet](ONET.IP60.StudentName.Date.pdf)
-- pictorial interest assessment with matching student score sheet.
-
 [Career One Stop: Career Exploration, Training, & Jobs](https://www.careeronestop.org/Toolkit/Skills/skills-matcher-questions.aspx) 
 
 - US Department of Labor skills matcher that allows students to self-evaluate their skills and knowledge across various employment types. 
@@ -51,6 +45,12 @@ CTE Career Clusters Interest Survey
 [Pictorial Interest Inventory](Pictorial_Interest_Inventory.pdf)  
 
 - structured around eight different career fields 
+
+O*NET Interest Profiler, pictorial version
+
+- [Assessment](ONET.IP60.Assessment.pdf)
+- [Score Sheet](ONET.IP60.StudentName.Date.pdf)
+- pictorial interest assessment with matching student score sheet.
 
 [Visual Student Survey](trans-plan-visual-student-survey.pdf) 
 
