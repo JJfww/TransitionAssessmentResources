@@ -46,6 +46,24 @@ It also include Transition to Adulthood E-Learning Modules that are self-paced. 
 
 _____ 
 
+[Supported Decision-Making](https://selfdetermination.ku.edu/research-resources/supported-decision-making/) from the University of Kansas Self-Determination Learning Center explains how people can receive support in making life decisions while still keeping control over those decisions. It highlights supported decision-making as an alternative to guardianship and emphasizes that supports may come from trusted people, technology, or community services.
+
+This KU resource also includes short videos and examples that can help students, families, and teams better understand the process:
+
+- [What is Supported Decision-Making?](https://youtu.be/42YMz3HABho)
+- [How Can Families and Trusted Supporters Support Decision Making?](https://www.youtube.com/watch?v=JYfWYfMc0pk)
+- [How Do You Use Supported Decision-Making?](https://www.youtube.com/watch?v=D16hhdXDPTU)
+
+Some of the main ideas highlighted in the resource include:
+
+- keeping the person at the center of decision-making
+- creating regular opportunities to make choices
+- presenting information in understandable ways
+- talking through options and possible outcomes
+- supporting communication of decisions and learning from the results
+
+_____ 
+
 [Adulting Made Easy](https://www.spedadulting.com/blogs/) is a comprehensive platform that provides resources, information, and support for special education students transitioning to adulthood. The website is dedicated to helping individuals with disabilities navigate the complexities of adult life, such as housing, employment, financial management, and community integration.
 
 The website is organized into several sections:
